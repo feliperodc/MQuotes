@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cormorant SC', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    color: #fefe;
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+.padre{
+    display: flex;     
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    height: 80vh;  
+}
+.hijo{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .2);
+    width: 600px;       
+    height: auto;
+    padding: 1rem;
+    /* border: 1px solid #eee; */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.quote-author, .quote-text{
+    text-align: center;
+}
+
+#reload{
+    fill: #aaa;
+    position: absolute;
+    bottom: 130px;
+    cursor: pointer;
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#reload:hover{
+    fill: #fff;
+    transition: all 1s;
+}
+
+footer p{
+    font-size: 12px; 
+    text-align: right; 
+    font-family: 'system-ui', sans-serif; 
+    color: #bbb; 
+    margin-right: 10px;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer p img{
+    height: 1rem;
+    width: 1rem;
+}
