@@ -7,20 +7,9 @@ fetch("https://type.fit/api/quotes")
 .then(function(data) {
     let quoteText = d.querySelector('.quote-text')
     let quoteAuthor = d.querySelector('.quote-author')
-    let random = Math.round(Math.random()*1000)
+    let random = Math.round(Math.random()*10)
     quoteText.innerHTML = data[random].text
-    quoteAuthor.innerHTML = data[random].author
-    
+    let autor = (quoteAuthor.innerHTML = data[random].author).replace(', type.fit', ' ')
+    quoteAuthor.innerHTML = autor
+    console.log(autor);
 }); 
-
-
-const reloadButton = document.querySelector("#reload");
-// Reload everything:
-function reload() {
-    reload = location.reload();
-}
-// Event listeners for reload
-reloadButton.addEventListener("click", reload, false);
-
-
-
