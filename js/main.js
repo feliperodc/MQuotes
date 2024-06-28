@@ -12,4 +12,7 @@ fetch("https://type.fit/api/quotes")
     let autor = (quoteAuthor.innerHTML = data[random].author).replace(', type.fit', ' ')
     quoteAuthor.innerHTML = autor
     console.log(autor);
+    d.getElementById('reload').onclick = function(){
+        window.location.reload()
+    }
 }); 
